@@ -11,5 +11,8 @@
 //Variable to pull in header file
 const header = require('../Price-header');
 
+//Creating Variable to display header
+var displayHeader = header.display("Josh", "Price", "Exercise 2.2");
+
 //Console.log to display formatted header
-console.log(header.display("Josh", "Price", "Exercise 2.2"));
+console.log(displayHeader);
