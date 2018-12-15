@@ -46,7 +46,7 @@ console.log(dateWriter('2018', '12' , '8'), formatNumber(temp, place) + ' degree
 
 //Variable Declarations for age and savings
 let age = '30';
-let save = '20,000'
+let save = '20,000';
 
 //ParseInt function
 function convertToInt() {
