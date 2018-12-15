@@ -2,30 +2,14 @@
 ============================================
 ; Title:  price-exercise-3.2.js
 ; Author: Professor Krasso
-; Date:   11 Dec 2018
+; Date:   15 Dec 2018
 ; Modified By: Josh Price
 ; Description: Exercise 3.2 Pattern Matching
 ;===========================================
 */
 
-/*
-  Expected output:
-
-  FirstName LastName
-  Exercise 3.2
-  Today's Date
-
-  // output from the match() function
-  false
-  true
-
-  // output from the if...else blocks
-  Truck and Car do not match!
-  Bike and Bike do match!
-  Four and Three do not match!
-*/
-
 //Start Program
+
 //Variable to pull in header file and log it.
 var header = require('../Price-header');
 var displayHeader = header.display("Josh", "Price", "Exercise 3.2");
