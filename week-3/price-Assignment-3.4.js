@@ -8,7 +8,7 @@
 ;===========================================
 */
 
-//Start Program
+//start program
 
 //Variable to pull in header file and log it.
 var header = require('../Price-header');

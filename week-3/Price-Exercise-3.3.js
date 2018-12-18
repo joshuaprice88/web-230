@@ -18,7 +18,7 @@ console.log('\n');
 
 
 //Variable Decleration
-let eventKeyCode = 13
+let eventKeyCode = 13;
 
 //Switch Statement
 switch (eventKeyCode) {

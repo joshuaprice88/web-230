@@ -45,4 +45,4 @@ yearsUntilGraduation(1988, 'Josh');
 yearsUntilGraduation(1999, 'Ian');
 yearsUntilGraduation(2013, 'Collin');
 
-//End Program
+//end program
