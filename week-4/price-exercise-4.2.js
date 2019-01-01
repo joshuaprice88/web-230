@@ -29,3 +29,5 @@ function getFruit(fruit) {
 
 //getFruit output
 getFruit(fruits);
+
+//end program

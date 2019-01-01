@@ -49,3 +49,5 @@ var total = "Your tip amounts are " + tips.join(", ") + " " + "and total with ti
 
 //console.log to output the tip amount
 console.log(total);
+
+//end program
