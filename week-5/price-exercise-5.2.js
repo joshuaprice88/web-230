@@ -4,7 +4,7 @@
 ; Author: Josh Price
 ; Date:   13 January 2019
 ; Modified By: Josh Price
-; Description:  Advanced Arrays
+; Description:  Built-in function
 ;===========================================
 */
 
@@ -16,8 +16,12 @@ console.log('\n');
 
 //Start Program
 
+//Array
 var food = ['Ramen', 'Sushi', 'Tacos', 'Pizza', 'BBQ'];
 
+//Array foreach
 food.forEach(function(food) {
   console.log(food);
-})
+});
+
+//End Programs
