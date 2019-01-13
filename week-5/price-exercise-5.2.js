@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  price-assignment-5.2.js
+; Title:  price-exercise-5.2.js
 ; Author: Josh Price
 ; Date:   13 January 2019
 ; Modified By: Josh Price
