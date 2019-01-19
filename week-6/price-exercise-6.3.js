@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  price-discussion-6.3.js
+; Title:  price-exercise-6.3.js
 ; Author: Josh Price
 ; Date:   19 January 2019
 ; Modified By: Josh Price
