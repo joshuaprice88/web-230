@@ -16,18 +16,7 @@ console.log('\n');
 
 //Start Program
 
-/*
-  Expected output:
-
-  FirstName LastName
-  Exercise 6.2
-  Today's Date
-
-  Catch clause: <your custom message goes here>
-  Finally clause reached...
-*/
-
-
+// Creating Exception handling Statement
 try {
   var x = 5;
   var y = 10;
@@ -40,3 +29,5 @@ try {
 } finally {
   console.log("Finally clause reached...")
 }
+
+//End Program
