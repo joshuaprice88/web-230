@@ -1,0 +1,82 @@
+<!--
+============================================
+; Title:  price-exercise-8.2.html
+; Author: Josh Price
+; Date:   03 February 2019
+; Description: Dynamic HTML
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Price Exercise 8.2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <style type="text/css">
+    ul {
+      list-style: none;
+      font-weight: 300;
+      font-family: Roboto;
+      padding-top: 20px;
+    }
+    #fruits {
+      margin: auto;
+      width: 8%;
+    }
+    #fruitTitle {
+      text-align: center;
+      font-weight: 500;
+      font-family: Roboto;
+      width: 100%;
+      background: #41d6c3;
+      margin: auto;
+      padding: 10px 0px;
+    }
+  </style>
+</head>
+<body>
+<div id="fruitTitle" class="width"></div>
+<div id="fruits"></div>
+
+<script>
+  var fruits = [
+    {
+      id: 1,
+      type: 'Orange'
+    },
+    {
+      id: 2,
+      type: 'Apple'
+    },
+    {
+      id: 3,
+      type: 'Bannana'
+    },
+    {
+      id: 4,
+      type: 'Strawberry'
+    },
+    {
+      id: 5,
+      type: 'Kiwi'
+    }
+  ]
+
+  fruitTitle = '<h2>Fruit List<h2>';
+
+  document.getElementById('fruitTitle').innerHTML = fruitTitle;
+
+  var fruitList = "<ul>";
+  for (var x=0; x < fruits.length; x++) {
+    fruitList += "<li>" + fruits[x].id + ": " + fruits[x].type + "</li>";
+  }
+  fruitList += "</ul>"
+
+  document.getElementById('fruits').innerHTML = fruitList
+</script>
+
+</body>
+</html>
