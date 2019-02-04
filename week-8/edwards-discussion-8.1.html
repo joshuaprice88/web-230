@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- no doctype defined-->
+<html lang ="en"><!-- no language or HTML tag defined-->
+<head>
+<title>Edwards Discussion 8.1</title><!--no title defined-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- added jquery library-->
+<!-- added the PX to sizes-->
+<style type="text/css">
+.htmlClass {
+		padding: 8px;
+		border:1px solid blue;
+    margin-bottom:8px;
+    background-color: tomato;
+	}
+</style>
+
+</head>
+<body>
+  <h1>What does the fox say?</h1>
+
+  <div id='clear' class='htmlClass'>Ring-ding-ding-ding-dingeringeding!</div> <!--added id='clear' and class='htmlClass'-->
+
+  <script> // added in script tag
+
+    $("#clear").click(function () {
+
+	  alert($('.htmlClass').empty()) //replaced .clear with .empty method
+
+    });
+  </script>
+</body>
+</html>
