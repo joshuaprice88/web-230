@@ -1,0 +1,75 @@
+<!--
+============================================
+; Title:  price-exercise-8.3.html
+; Author: Josh Price
+; Date:   03 February 2019
+; Description: jQuery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div id='bar' class='fullwidth'>
+    <h3>Paragraph Title</h3>
+  </div>
+  <div id='paragraph'>
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt congue nisi id fringilla. Quisque nec ipsum sed nulla aliquam sodales. Donec placerat pharetra lorem et tincidunt. Etiam vel pellentesque arcu. Proin eget euismod augue. Praesent convallis, dolor non ultricies fringilla, tortor massa elementum erat, at malesuada orci diam eget augue. Etiam et lectus sit amet diam ultrices faucibus id ut purus. Sed sit amet magna velit. Fusce tristique quam lorem, vitae congue lacus tincidunt in. Fusce maximus nulla nibh, sed dignissim velit vehicula nec. Mauris at diam lorem. Nunc vitae ex elit. Praesent vulputate sit amet dui sed sodales. Nunc feugiat tempor tortor, nec condimentum erat tincidunt sed. Aenean feugiat odio in ex molestie, ac vehicula est pulvinar.
+  </p>
+  <button type="button">Toggle</button>
+  <table>
+    <tr>
+      <td>ID</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <td href='#' class='fruit'>1</td>
+      <td>Apple</td>
+    </tr>
+    <tr>
+      <td href='#' class='fruit'>2</td>
+      <td>Orange</td>
+    </tr>
+    <tr>
+      <td href='#' class='fruit'>3</td>
+      <td>Cherry</td>
+    </tr>
+    <tr>
+      <td href='#' class='fruit'>4</td>
+      <td>Strawberry</td>
+    </tr>
+    <tr>
+      <td href='#' class='fruit'>5</td>
+      <td>Kiwi</td>
+    </tr>
+  </table>
+  </div>
+
+<script type="text/javascript">
+  $('button').click(function() {
+    $('p').toggle();
+  });
+
+  $(function() {
+  $('.fruit').click(function(event) {
+    event.preventDefault();
+    var fruit = $(this).text();
+    var fruitType = $(this).closest('td').next().text();
+    alert('{fruit_id: ' + fruit + ', fruit_type: ' + fruitType + '}');
+  });
+});
+</script>
+
+</body>
+</html>

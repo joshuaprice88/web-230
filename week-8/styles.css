@@ -1,0 +1,36 @@
+* {
+  font-family: Roboto;
+}
+
+#bar {
+  text-align: center;
+  font-weight: 500;
+  background: #41d6c3;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+#paragraph {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightsteelblue;
+}

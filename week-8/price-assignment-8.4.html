@@ -1,0 +1,119 @@
+<!--
+============================================
+; Title:  price-assignment-8.4.html
+; Author: Josh Price
+; Date:   03 February 2019
+; Description: Bringing it all together
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    // Object Creation
+    function employee(id, firstName, lastName, title){
+      this.id = id;
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.title = title;
+    }
+
+    // Array with list of Employees
+    var employee = [
+      {
+        id: 1,
+        firstName: 'Josh',
+        lastName: 'Price',
+        title: 'Developer'
+      },
+      {
+        id: 2,
+        firstName: 'John',
+        lastName: 'Smith',
+        title: 'Sr. Developer'
+      },
+      {
+        id: 3,
+        firstName: 'Barb',
+        lastName: 'Johnson',
+        title: 'Scrum Master'
+      },
+      {
+        id: 4,
+        firstName: 'Jane',
+        lastName: 'Doe',
+        title: 'Sr. Manager'
+      },
+      {
+        id: 5,
+        firstName: 'Matt',
+        lastName: 'Smith',
+        title: 'System Administrator'
+      }
+    ]
+
+    // Function to output data on click
+    function getEmployee(id) {
+      employee.forEach(function(code) {
+        if(id == code.id) {
+        alert(code.id + " , " + code.firstName + " , " + code.lastName + " , " +code.title);
+      };
+    });
+
+  };
+
+    //Table Creation
+    var output = '<table><tr>';
+      output += '<th>id</th>';
+      output += '<th>First Name</th>';
+      output += '<th>Last Name</th>';
+      output += '<th>Title</th></tr>';
+
+    for (var i=0; i < employee.length; i++) {
+      output += '<tr><td>' + employee[i].id + '</td>';
+      output += '<td>' + employee[i].firstName + '</td>';
+      output += '<td>' + employee[i].lastName + '</td>';
+      output += '<td>' + employee[i].title + '</td></tr>';
+    };
+
+    output += '</table>'
+
+    //Output to Browser
+    document.getElementById('emps').innerHTML = output;
+
+    //Function to output employee info on click.
+    $(function() {
+      $("table tr").click(function() {
+        var id = $(this).find('td:first').html();
+        getEmployee(id);
+      })
+    });
+  });
+</script>
+</body>
+</html>
